@@ -1,0 +1,11 @@
+.venv
+/venv
+remontik/remontik/__init__.py
+
+venv/Lib/site-packages/__pycache__/
+
+venv/Lib/site-packages/_distutils_hack/__pycache__/
+
+remontik/remontik/__pycache__/
+
+remontik/remontik/spiders/__pycache__/
