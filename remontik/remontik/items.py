@@ -1,12 +1,11 @@
 import scrapy
-from scrapy.loader.processors import TakeFirst, MapCompose, Join
+from scrapy.loader.processors import TakeFirst, MapCompose, Join, SelectJmes
 
 
 class RemontikItem(scrapy.Item):
     _id = scrapy.Field()
-    article_author = scrapy.Field(output_processor=TakeFirst())
-    article_urls = scrapy.Field(output_processor=TakeFirst())
-    article_name = scrapy.Field(output_processor=TakeFirst())
-    article_image = scrapy.Field()
-    article_tag = scrapy.Field()
-    article_add_datetime = scrapy.Field(output_processor=TakeFirst())
+    category_name = scrapy.Field(output_processor=TakeFirst())
+    work_name = scrapy.Field(output_processor=TakeFirst())
+    work_price = scrapy.Field()
+    category_link = scrapy.Field(output_processor=TakeFirst())
+
